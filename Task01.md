@@ -1,4 +1,4 @@
-# Datawhale 计算机视觉基础-图像处理（上）-Task01 OpenCV框架与图像插值算法
+# Intro to CV-Task01 OpenCV框架与图像插值算法
 
 ## 1.1 简介
 
@@ -100,7 +100,7 @@ $$ \begin{array}{l} f(x, y)=[f(1,0)-f(0,0)] x+[f(0,1)-f(0,0)] y \ +[f(1,1)+f(0,0
 
 > void cv::resize(InputArray src, OutputArray dst, Size dsize, double fx=0, double fy=0, int interpolation=INTER_LINEAR )
 
-```
+```python
 src:输入图像
 dst:输出图像
 dsize:输出图像尺寸
@@ -115,7 +115,7 @@ INTER_LINEAR：插值方法，总共五种
 
 **代码实践：**
 
-```
+```python
 #include <opencv2/opencv.hpp>
 #include <iostream>
 
@@ -201,7 +201,7 @@ int main(int argc, char* argv[])
 
 **代码实践：**
 
-```
+```python
 import cv2
  
 if __name__ == "__main__":
